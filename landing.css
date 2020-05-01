@@ -1,0 +1,293 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-color: #91B3C6;
+    border: 1px solid;
+    font-weight: 700;
+    text-align: justify;
+    font-family: 'Noto Sans', sans-serif; 
+}
+
+nav {
+    background-color: #d8d9db;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.63rem;
+    z-index: 10;
+}
+
+.logo {
+    float: left;
+}
+
+.top {
+    float: right;
+}
+
+.top li {
+    display: inline;
+    list-style: none;
+    margin-right: 1.88rem;
+}
+
+img {
+    margin-right: 0.31rem;
+    float: left;
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    display: inline;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+span {
+    font-size: 0.63rem;
+    font-style: italic;
+    position: absolute;
+    top: 3.12rem;
+    left: 4.375rem;
+}
+
+.description {
+    width: 70%;
+    margin: 3.75rem auto 0px auto;
+    padding: 1.25rem;
+}
+
+.des {
+    text-align: center;
+}
+
+label {
+    text-align: center;
+    display: block;
+}
+
+input {
+    display: block;
+    margin: 0.63rem auto;
+    padding: 0.63rem;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: inherit;
+}
+
+aside {
+    position: fixed;
+    top: 6.25rem;
+    left: 1.88rem;
+    text-align: center;
+}
+
+aside p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.quality {
+    width: 70%;
+    margin: 1rem auto;
+    padding: 0.63rem;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 6rem auto;
+    gap: 1.25rem;
+}
+
+.fas {
+    margin: 2.5rem auto 0 auto;
+}
+
+.grid h2 {
+    margin-bottom: 0.31rem;
+}
+
+.grid p {
+    margin-top: 0;
+}
+
+.facility {
+    position: relative;
+    overflow: hidden;
+    padding-top: 30%;
+}
+   
+.facility iframe {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    height: 80%;
+    border: 0;
+}
+
+.pricing {
+    margin: 1.25rem auto;
+    width: 70%;
+    display: flex;
+}
+
+.plan {
+    width: 33%;
+    border: 2px solid;
+    margin-right: 0.63rem;
+    text-align: center;
+}
+
+.plan p {
+    font-size: 1.5rem;
+}
+
+.comp li {
+    list-style: none;
+    margin-right: 1.88rem;
+    line-height: 1.5;
+}
+
+.btn {
+    display: block;
+    padding: 0.6rem;
+    margin: 0.6rem auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #510E80;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.8rem;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.btn:hover {
+    background-color: #4048C9;
+}
+
+footer {
+    background: #d8d9db;
+    padding: 0.63rem;
+    display: flex;
+}
+
+address, .social, .copy {
+    flex-basis: 33.3%;
+    text-align: center;
+}
+
+.fab {
+    margin-left: 1.25rem;
+    cursor: pointer;
+}
+
+.fab:hover {
+    transform: scale(1.5);
+}
+
+.copy li {
+    margin-right: 1.88rem;
+    list-style: none;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: green;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
+    img {
+        max-width: 25%;
+    }
+
+    .pricing {
+        width: 80%;
+    }
+
+    aside p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 695px) {
+    img {
+        max-width: 20%;
+    }
+
+    .pricing {
+        display: flex;
+        width: 90%;
+    }
+
+    aside {
+        position: absolute;
+        top: 6.25rem;
+        left: 1.88rem;
+    }
+}
+
+@media (max-width: 425px) {
+
+    html {
+        font-size: 8px;
+    }
+    .description {
+        width: 90%;
+    }
+    
+    .quality {
+        width: 90%;
+    }
+
+    aside {
+        visibility: hidden;
+    }
+
+    .pricing {
+        width: 100%;
+    }
+
+    .plan:first-child {
+        margin-left: 1rem;
+    }
+
+    .comp li {
+        position: relative;
+        right: 1.88rem;
+        margin: auto;
+    }
+}
+
+@media (max-width: 375px) {
+    .plan {
+        width: 33.33%;
+        margin: 0;
+    }
+}
